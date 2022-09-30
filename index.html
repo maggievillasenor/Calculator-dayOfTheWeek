@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS de bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" >
+        <!-- CSS personalizado -->
+        <link rel="stylesheet" href="./css/personalizado/style.css" >
+        <!-- CSS Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+          <h1>CALDULADORA</h1>
+          <h2>Días de la Semana</h2>
+        </div>
+    </div>
+        <br>
+
+    <!-- Estructura de Calculadora -->
+    <div class="container">
+        <!-- Valores -->
+        <div class="row justify-content-center">
+            <!-- Día -->
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="form_need">Día</label>
+                    <input style="text-align: center;" type="number" min="1" max="31" class="form-control" id="dayInput" placeholder="dd" required/>
+                </div>
+            </div>
+
+            <!-- Mes -->
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="form_need">Mes</label>
+                    <input style="text-align: center;" type="number" min="1" max="12"  class="form-control " id="monthInput" placeholder="mm" required/>
+                </div>
+            </div>
+
+            <!-- Año -->
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="form_need" >Año</label>
+                    <input style="text-align: center;" type="number" class="form-control"  id="yearInput" placeholder="aaaa" required/>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    
+        <!-- Funcion Calculadora -->
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-sm-8">
+                <button id="btn"  class="btn btn-outline-secondary ">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+         <!-- Resultado de la Operación -->
+    <div class="container my-2">
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+                <label>Día de la semana :</label>        
+                <input id="resultado" style="text-align: right;"  class="form-control" readonly ><br>
+          </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- JS de Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Script Calculadora -->
+    <script src="./scripts/calculadoraDiaSemana.js"></script>
+
+    
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/maggievillasenor"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i>
+            </a>
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/margarita-villasenor/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright || Maggie: <em>Calculadora - Obtener día de la Semana</em>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
